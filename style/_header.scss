@@ -1,0 +1,136 @@
+.header {
+    width: 100%;
+    padding: 10px;
+    height: 50px;
+    background: radial-gradient(rgba(27, 39, 53, .8) 0%, rgba(9, 10, 15, .8) 100%);
+    position: fixed;
+
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+
+    }
+
+    &__link {
+
+
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
+
+        ;
+
+        @media screen and (min-width: 768px) {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+
+        ;
+
+        @media screen and (min-width: 1024px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+
+        ;
+    }
+
+    &__menu {
+        width: 300px;
+
+    }
+
+    &__items {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width: 768px) {
+            position: fixed;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            top: 0;
+            left: -100%;
+            width: 50%;
+            height: 100vh;
+            padding: 20px 15px;
+            background: radial-gradient(rgba(27, 39, 53, .8) 0%, rgba(9, 10, 15, .8) 100%);
+            transition: 0.6s all;
+        }
+
+        &_active {
+            @media screen and (max-width: 768px) {
+                left: 0;
+            }
+        }
+    }
+
+    &__item {
+        @media screen and (max-width: 768px) {
+            padding-right: 0;
+            border: none;
+            margin: 15px 0;
+
+        }
+
+        & a {
+            color: $color5;
+            text-decoration: none;
+            font-family: $main_font;
+            font-size: 1.4rem;
+
+            @media screen and (max-width: 768px) {
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
+
+.hamburger {
+    display: none;
+
+    @media screen and (max-width: 768px) {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 26px;
+
+        & span {
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color: $color5;
+            margin-bottom: 2px;
+            transition: 0.5s all;
+        }
+
+        &__active {
+            & span {
+                margin-bottom: -2px;
+            }
+
+            & span:nth-child(1) {
+                transform: rotate(-45deg);
+            }
+
+            & span:nth-child(2) {
+                display: none;
+            }
+
+            & span:nth-child(3) {
+                transform: rotate(45deg);
+            }
+        }
+    }
+}

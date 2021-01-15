@@ -1,0 +1,104 @@
+.about {
+    padding: 5rem 1.5rem;
+    min-height: 600px;
+    background-color: $color1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+
+    &__title {
+        font-family: $main_font;
+        font-weight: 500;
+        color: $color5;
+        text-align: center;
+
+        @media screen and (max-width: 767px) {
+            font-size: 1.575rem;
+            line-height: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        @media screen and (min-width: 768px) {
+            font-size: 2.575rem;
+            line-height: 3.325rem;
+            margin-bottom: 5rem;
+        }
+
+        @media screen and (min-width: 1024px) {
+            font-size: 2.875rem;
+            line-height: 3.625rem;
+            margin-bottom: 7rem;
+        }
+    }
+
+    &__wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+
+    }
+
+    &__img {
+        flex-basis: 450px;
+
+        & svg {
+            max-width: 100%;
+            height: 400px;
+        }
+
+    }
+
+    &__content {
+
+        @media screen and (max-width: 767px) {
+            flex-basis: 450px;
+        }
+
+        @media screen and (min-width: 768px) {
+            flex-basis: 500px;
+        }
+    }
+
+    &__text {
+        font-family: $main_font;
+        color: $color5;
+        font-size: 1rem;
+        line-height: 1.4rem;
+        margin-bottom: 0.5rem;
+
+        &:nth-child(4) {
+            margin-bottom: 1.5rem;
+        }
+
+        &::first-letter {
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+    }
+
+    &__button {
+        width: 200px;
+        height: 40px;
+        background-color: $color5;
+        color: $color1;
+        border: 1px solid $color5;
+        border-radius: 5px;
+        font-family: $main_font;
+        font-size: 1rem;
+        transition: 0.5s all;
+
+        &:hover {
+            background-color: $color1;
+            border: 1px solid $color5;
+            color: $color5;
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+    }
+}

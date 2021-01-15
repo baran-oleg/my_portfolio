@@ -1,0 +1,31 @@
+.footer {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    height: 100px;
+    background: linear-gradient(80deg, #4f2a29, #a6726a, #dfbeaa);
+    background-size: 600% 600%;
+    animation: footerBack 20s ease infinite;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    &>.container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+    }
+
+    &__text {
+
+        font-family: $main_font;
+        font-size: 1rem;
+        line-height: 1.25rem;
+        color: $color5;
+        letter-spacing: 1px;
+        // margin: 0 auto;
+    }
+}
