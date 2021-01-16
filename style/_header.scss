@@ -4,7 +4,7 @@
     height: 50px;
     background: radial-gradient(rgba(27, 39, 53, .8) 0%, rgba(9, 10, 15, .8) 100%);
     position: fixed;
-
+    z-index: 100;
 
     .container {
         display: flex;
@@ -52,6 +52,7 @@
         list-style: none;
         display: flex;
         justify-content: space-between;
+        margin: 0;
 
         @media screen and (max-width: 768px) {
             position: fixed;
