@@ -537,6 +537,31 @@ body {
     max-width: 300px;
   }
 }
+@media screen and (min-width: 640px) {
+  #slider {
+    max-width: 600px;
+  }
+}
+@media screen and (min-width: 700px) {
+  #slider {
+    max-width: 650px;
+  }
+}
+@media screen and (min-width: 800px) {
+  #slider {
+    max-width: 750px;
+  }
+}
+@media screen and (min-width: 900px) {
+  #slider {
+    max-width: 850px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #slider {
+    max-width: 1000px;
+  }
+}
 
 .contacts {
   padding: 1rem 1.5rem;
